@@ -1,0 +1,51 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "CPU Usage",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [
+          ["Project17", "cpu_usage_user", "host", "AZLTT0222435e27", "cpu", "cpu-total"],
+          [".", "cpu_usage_system", ".", ".", ".", "."],
+          [".", "cpu_usage_idle", ".", ".", ".", "."]
+        ],
+        "period": 300,
+        "stat": "Average"
+      }
+    },
+    {
+      "type": "metric",
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Memory Usage",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [
+          ["Project17", "mem_used_percent", "host", "AZLTT0222435e27"]
+        ],
+        "period": 300,
+        "stat": "Average"
+      }
+    },
+    {
+      "type": "metric",
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Disk Usage",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [
+          ["Project17", "used_percent", "host", "AZLTT0222435e27", "path", "/", "device", "sda1", "fstype", "ext4"]
+        ],
+        "period": 300,
+        "stat": "Average"
+      }
+    }
+  ]
+}
